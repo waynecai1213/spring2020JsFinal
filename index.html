@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>The Compliment Chatroom!</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="./css/style.css">
+
+<!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet"> -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+	<ul class="pages">
+		<li class="login page">
+			<div class="form">
+      
+        <h2 class="">
+				Welcome to<br/>The Compliment Chatroom!
+        </h2>
+				
+        <h3 class="title">Your Name</h3>
+        <input id="usernameInput" type="text" maxlength="14" placeholder="Type Your User Name Here..." />
+
+        <h3 class="title">Another Peer ID</h3>
+        <input id="peerIdInput" type="text" placeholder="Type ID of Another Peer..."/>
+        <p class="info">
+					Your Peer ID is:
+					<span id="peerId"></span>
+        </p>
+        <p class="info" id="stateText"> Not Connected </p>
+        <div >
+          <button class="btn" id="connectBtn"><span> CONNECT</span></button>
+         
+        </div>
+         <span class="bgText1">APPLAUSE 4U</span>
+
+
+        <div class="sideLeft pattern-dots-md red text-pattern">
+          <img src="./assets/clapping.gif" height="400" width="400" style="transform:translate(10px, -10px);">
+          <!-- <span class="clap">👏</span> -->
+        </div>
+        <div class="sideRight">
+         <img src="./assets/clapping.gif" height="400" width="400">
+          <!-- <span class="clap">👏</span> -->
+        </div>
+      </div>
+
+    </li>
+    
+		<li class="chat page">
+			<div>
+       <!-- https://media.giphy.com/media/eNGmF965f4ooyGMwGP/giphy.gif -->
+          <img id="gifImg" src="" alt="">
+          
+				<div id="chat">
+					[new chat] <br/>
+        </div>
+        
+				<input id="messageInput" placeholder="Type Your Message Here..."/>
+      <!-- <button class="btn" id="sendBtn">
+          SEND WITH LOVE
+        </button> -->
+    </div>
+      <!-- <div class="chatArea">
+        <ul class="messages"></ul>
+      </div> -->
+      <!-- <input class="inputMessage" placeholder="Type your message here.."/>
+      <button class="Btn" id="sendBtn">
+        Send With Love
+      </button> -->
+    </li>
+    
+
+    
+  </ul>
+    
+    
+  <script src="https://cdn.jsdelivr.net/npm/peerjs@0.3.20/dist/peer.min.js"></script>
+  <script src="./js/script.js" defer></script>
+  </body>
+</html>
